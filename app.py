@@ -7,7 +7,7 @@ from nltk.stem import PorterStemmer
 
 nltk.download("stopwords")
 nltk.download("punkt")
-nlt.download("punkt_tab")
+nltk.download("punkt_tab")
 
 # Load models and vectorizers
 
