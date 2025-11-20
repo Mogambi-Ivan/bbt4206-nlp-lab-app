@@ -9,12 +9,11 @@ nltk.download("stopwords")
 nltk.download("punkt")
 
 # Load models and vectorizers
-# Adjust filenames if yours differ
 
 topic_model = joblib.load("model/topic_model_lda.pkl")
-topic_vectorizer = joblib.load("model/topic_vectorizer_lda.pkl")
-sentiment_model = joblib.load("model/sentiment_model.pkl")
-sentiment_vectorizer = joblib.load("model/sentiment_vectorizer.pkl")
+topic_vectorizer = joblib.load("model/topic_vectorizer.pkl")
+sentiment_model = joblib.load("model/sentiment_classifier_binary_balanced.pkl")
+sentiment_vectorizer = joblib.load("model/topic_vectorizer_binary_balanced.pkl")
 
 stop_words = set(stopwords.words("english"))
 stemmer = PorterStemmer()
